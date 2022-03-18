@@ -1,0 +1,90 @@
+  h1, h2 {
+    color: black;
+  }
+  
+  p {
+    color: black;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+  
+  
+  ol, ul {
+    padding: 5px 25px;
+  }
+  
+  strong {
+    color: black;
+  }
+  
+  em {
+    color: black;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    background: rgb(255, 255, 255);
+    display: grid;
+    width: auto;
+    height: auto;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+      "heady heady heady"
+      "navvy navvy navvy"
+      "aside1 mainy aside2"
+      "aside1 mainy aside2"
+      "aside1 mainy aside2"
+      "footy footy footy";
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+     
+  main {
+    grid-area: mainy;
+    background: rgb(255, 255, 255);
+    max-height: 100%;
+    display: block;
+  }
+  
+  header {
+    grid-area: heady;
+    background: rgb(166, 247, 163);
+    display: block;
+  }
+  
+  nav {
+    grid-area: navvy;
+    background: rgb(219, 245, 218);
+    display: block;
+    font-family: 'Source Code Pro', monospace;
+  }
+  
+  #aside1 {
+    grid-area: aside1;
+    display: block;
+  }
+  
+  #aside2 {
+    grid-area: aside2;
+    display: block;
+  }
+  
+  footer {
+    grid-area: footy;
+    background: rgb(166, 247, 163);
+    display: block;
+  }
+  
+  header, nav, main, aside, footer {
+    padding: 1.5em;
+    border: 1px black solid;
+  }
+  
+  header, footer {
+    text-align: center;
+  }
