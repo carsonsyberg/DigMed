@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+
+/* form styling */
+body {
+	font-family:'Courier New', Courier, monospace;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	background-color: rgb(255, 245, 231);
+}
+
+input {
+	background-color: rgb(255, 255, 255);
+	border-color: rgb(0, 0, 0);
+	border-width: 1px;
+}
+
+label {
+	margin-top: 1em;
+	margin-bottom: .5em;
+	width: auto;
+	display: block;
+	position: relative;
+	/* text-align: right; */
+}
+
+fieldset {
+	background-color: rgb(255, 250, 244);
+}
+
+label#radio_button {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+#formcol1 li {
+	list-style: none;
+}
+
+#wrapper {
+	width: 300px;
+	margin: auto;
+}
+
+div#multchoice {
+	margin-top: 20px;
+}
+
+h1, p {
+	text-align: center;
+	width: 100%;
+}
+
+select:focus, select:active, input:focus, input:active, input:focus+label, input:active+label, label[for]:focus, label[for]:active {
+	color: #FFF !important;
+	background-color: #D17A00 !important;
+}
+
+.submit-button input {
+	padding: 5px;
+	border-width: 1px;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+	font-size: medium;
+}
+
+#formcol1 input.reqfield {
+	background:#ffd08f;
+}
+
+#formcol1 label.required:after {
+	color: #000000;
+	content: ' *';
+	display: inline;
+}
+/* end of form css */
+	
