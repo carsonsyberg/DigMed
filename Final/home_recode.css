@@ -1,0 +1,202 @@
+
+.dropdown {
+    display: inline;
+    background: #1d1d1d;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 15px;
+    background: #1d1d1d;
+    margin-left: 0;
+}
+
+.dropdown-menu {
+    background: #1d1d1d;
+    align-content:stretch;
+}
+
+.btn {
+    background-color: #1d1d1d;
+    color: white;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.btn:active,
+.btn:hover,
+.btn:focus {
+    background-color: white !important;
+    color: #1d1d1d;
+}
+
+a.dropdown-item {
+    color: white;  
+}
+
+ul {
+    list-style-type: none;  
+}
+
+header {
+    grid-area: heady;
+    background: #1d1d1d;
+    display: block;
+    text-align: center;
+}
+
+nav {
+    grid-area: navvy;
+    background: #1d1d1d;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+#section_1 {
+    grid-area: sec_1;
+    max-width: 25vw;
+}
+
+#section_2 {
+    grid-area: sec_2;
+    max-width: 25vw;
+}
+
+#section_3 {
+    grid-area: sec_3;
+    max-width: 25vw;
+}
+
+#section_0 {
+    grid-area: sec_0;
+    max-width: 75vw;
+    padding-bottom: 0;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#section_0 strong {
+    display: block;
+    font-size: larger;
+    padding-left: 7vw;
+    padding-right: 7vw;
+}
+
+section {
+    display: block;
+    background: white;
+    padding: 1.5em;
+    text-align: left;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: rgb(255, 255, 255);
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+    grid-template-areas:
+        "heady heady heady heady heady"
+        "navvy navvy navvy navvy navvy"
+        ". sec_0 sec_0 sec_0 ."
+        ". sec_1 sec_2 sec_3 ."
+        "footy footy footy footy footy";
+}
+
+@media only screen and (max-width: 700px) {
+    .container {
+        max-width: 100%;
+        margin: 0px;
+        padding: 0px;
+        background: rgb(255, 255, 255);
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+        grid-template-areas:
+            "heady heady heady heady heady"
+            "navvy navvy navvy navvy navvy"
+            ". sec_0 sec_0 sec_0 ."
+            ". sec_1 sec_1 sec_1 ."
+            ". sec_2 sec_2 sec_2 ."
+            ". sec_3 sec_3 sec_3 ."
+            "footy footy footy footy footy";
+    }
+
+    
+    #section_1 {
+        grid-area: sec_1;
+        max-width: 100%;
+        min-width: 50vw;
+    }
+
+    #section_2 {
+        grid-area: sec_2;
+        max-width: 100%;
+        min-width: 50vw;
+    }
+
+    #section_3 {
+        grid-area: sec_3;
+        max-width: 100%;
+        min-width: 50vw;
+    }
+}
+
+header {
+    color: white;   
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 2px;
+    margin-top: 15px;
+}
+
+h2 {
+    font-size: x-large;
+    font-weight: lighter;
+}
+
+footer strong {
+    padding: auto;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    padding-inline: 25px;
+}
+
+footer {
+    grid-area: footy;
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+
+footer img {
+    max-width: 25px;
+    max-height: 25px;
+}
+
+header a {
+    color: white;
+}
+
+header a:hover, header a:active, header a:focus {
+    color: #1f1f1f;
+    background: white;
+    text-decoration: none;
+}
+  
