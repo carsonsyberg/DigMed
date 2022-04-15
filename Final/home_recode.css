@@ -4,9 +4,11 @@
     background: #1d1d1d;
 }
 
+
 img {
     max-width: 100%;
     height: auto;
+    border-radius: 5px;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -26,6 +28,9 @@ img {
     color: white;
     margin: auto;
     margin-top: 10px;
+    border-radius: 0px;
+    border: 4px;
+    border-color: white;
 }
 
 .btn:active,
@@ -47,15 +52,21 @@ header {
     grid-area: heady;
     background: #1d1d1d;
     display: block;
-    text-align: center;
+}
+
+#leftAlign {
+    float: left;
+}
+
+#rightAlign {
+    float: right;
 }
 
 nav {
     grid-area: navvy;
     background: #1d1d1d;
     display: block;
-    text-align: center;
-    padding: 10px;
+    float: left;
 }
 
 #section_1 {
@@ -106,7 +117,6 @@ section {
     grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
     grid-template-areas:
         "heady heady heady heady heady"
-        "navvy navvy navvy navvy navvy"
         ". sec_0 sec_0 sec_0 ."
         ". sec_1 sec_2 sec_3 ."
         "footy footy footy footy footy";
@@ -199,4 +209,3 @@ header a:hover, header a:active, header a:focus {
     background: white;
     text-decoration: none;
 }
-  
