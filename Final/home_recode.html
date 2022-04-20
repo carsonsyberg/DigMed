@@ -1,60 +1,58 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <link href="css/grid-form.css" rel="stylesheet">
-        <link href="home_recode.css" rel="stylesheet">
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-        <title>Goldminer Hotel</title>
-        <script>
+  <head><!-- 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+    <link href="css/grid-form.css" rel="stylesheet">
+    <link href="home_recode.css" rel="stylesheet">
+    <script>
           $('.input-group input').keydown(function(e){
-            if(e.which == 9){ // tab
-              e.preventDefault();
-              $(this).parent().find('.dropdown-toggle').click();
-              $(this).parent().find('.dropdown-menu a:first').focus();
-            }
-          });
-          
-          $('.dropdown-menu a').keydown(function(e){
-            switch(e.which){
-              case 36: // home
-                e.preventDefault();
-                $(this).closest('.dropdown-menu').find('a:first').focus();
-                break;
-              case 35: // end
-                e.preventDefault();
-                $(this).closest('.dropdown-menu').find('a:last').focus();
-                break;
-            }
-          });
-        </script>
-    </head>
+      if(e.which == 9){ // tab
+        e.preventDefault();
+        $(this).parent().find('.dropdown-toggle').click();
+        $(this).parent().find('.dropdown-menu a:first').focus();
+      }
+    });
+
+    $('.dropdown-menu a').keydown(function(e){
+      switch(e.which){
+        case 36: // home
+          e.preventDefault();
+          $(this).closest('.dropdown-menu').find('a:first').focus();
+          break;
+        case 35: // end
+          e.preventDefault();
+          $(this).closest('.dropdown-menu').find('a:last').focus();
+          break;
+      }
+    });
+    </script>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Goldminer Hotel</title>
+  </head>
   
   <body>
     <div class="container">
       <!-- HEADER -->
       <header role="banner">
-
-        <div id="leftAlign">
-          <button class="btn" type="button" id="headerButton">
-            GOLDMINER HOTEL
-          </button>
-        </div>
-        
-        <div id="rightAlign">
-          <button class="btn" type="button" id="headerButton">
-            LOCATE AND CONTACT THE GOLDMINER HOTEL
-          </button>
-        </div>
-
-          <nav role="navigation">
-
-            <div class="dropdown input-group">
-              <button type="button" id="dropdownMenuButton" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  
+        <img src="https://github.com/carsonsyberg/DigMed/blob/main/Final/goldminer_banner_image.jpg?raw=true" alt="Reunion group gathered in front of Goldminer Hotel" id="top_photo">
+        <button class="btn" type="button" id="headerButton">
+          GOLDMINER HOTEL
+        </button>
+  
+  
+        <nav role="navigation">
+  
+  
+  
+  
+          <div class="input-group">
+            <div class="input-group-btn">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Reservations & <br> Special Offers</button>
               <ul class="dropdown-menu">
                 <li>
@@ -73,172 +71,170 @@
                   <a class="dropdown-item" href="#">The Goldminer Hotel Store</a>
                 </li>
               </ul>
-            </div><!-- /input-group -->
-    
-    
-          <div class="dropdown">
-            <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              HOTEL BEDROOMS
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <ul>
+            </div><!-- /btn-group -->
+          </div><!-- /input-group -->
+  
+          <div class="input-group">
+            <div class="input-group-btn">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  
+                Hotel Bedrooms</button>
+              <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#">OVERVIEW OF BEDROOMS</a>
+                  <a class="dropdown-item" href="#">Overview of Bedrooms</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">MOUNTAIN SWEET</a>
+                  <a class="dropdown-item" href="#">Mountain Sweet</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">THE ELDORADO</a>
+                  <a class="dropdown-item" href="#">The Eldorado</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">THE SPENCER</a>
+                  <a class="dropdown-item" href="#">The Spencer</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">THE DIVIDE</a>
+                  <a class="dropdown-item" href="#">The Divide</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">FIRST FLOOR</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-    
-          <div class="dropdown">
-            <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              HOTEL COMMON ROOMS
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <ul>
-                <li>
-                  <a class="dropdown-item" href="/overview-common-rooms">OVERVIEW OF COMMON ROOMS</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/social-room">THE SOCIAL ROOM</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/lobby">THE LOBBY</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/kitchen">THE KITCHEN</a>
+                  <a class="dropdown-item" href="#">First Floor</a>
                 </li>
               </ul>
-            </div>
-          </div>
-    
-          <div class="dropdown">
-            <button class="btn" type="button" id="dropDownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              THINGS TO DO
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <ul>
+            </div><!-- /btn-group -->
+          </div><!-- /input-group -->
+  
+          <div class="input-group">
+            <div class="input-group-btn">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Hotel Common Rooms</button>
+              <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#">ACTIVITIES OVERVIEW</a>
+                  <a class="dropdown-item" href="/overview-common-rooms">Overview of Common Rooms</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">SEMINAR GROUPS AND TOPICS</a>
+                  <a class="dropdown-item" href="/social-room">The Social Room</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">UPCOMING EVENTS</a>
+                  <a class="dropdown-item" href="/lobby">The Lobby</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">DARK SKY</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">ANIMAL AND PLANT LIFE</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">WATER ACTIVITIES</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">WINTER ACTIVITIES</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">SUMMER ACTIVITIES</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">SHOPPING, LEARNING, DINING, SIGHTSEEING</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">CASINO GAMING</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">ENTERTAINMENT, RELIGIOUS SERVICES</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">GHOSTS?</a>
+                  <a class="dropdown-item" href="/kitchen">The Kitchen</a>
                 </li>
               </ul>
-            </div>
-          </div>
-    
-          <div class="dropdown">
-            <button class="btn" type="button" id="dropDownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              MORE RESOURCES
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <ul>
+            </div><!-- /btn-group -->
+          </div><!-- /input-group -->
+  
+          <div class="input-group">
+            <div class="input-group-btn">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Things To Do</button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Activities Overview</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Seminar Groups & Topics</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Upcoming Events</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Dark Sky</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Animal & Plant Life</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Water Activities</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Winter Activities</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Summer Activities</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Shopping, Learning, Dining, Sightseeing</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Casino Gaming</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Entertainment, Religious Services</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Ghosts?</a>
+                </li>
+              </ul>
+            </div><!-- /btn-group -->
+          </div><!-- /input-group -->
+  
+          <div class="input-group">
+            <div class="input-group-btn">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                More Resources</button>
+              <ul class="dropdown-menu">
                 <li>
                   <a class="dropdown-item" href="#">FAQ</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">FLOOR PLANS</a>
+                  <a class="dropdown-item" href="#">Floor Plans</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">BREAKFAST MENUS</a>
+                  <a class="dropdown-item" href="#">Breakfast Menus</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">WEATHER</a>
+                  <a class="dropdown-item" href="#">Weather</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">A GREEN BUILDING</a>
+                  <a class="dropdown-item" href="#">A Green Building</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">HISTORIC PRESERVATION</a>
+                  <a class="dropdown-item" href="#">Historic Preservation</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">A COLLECTIVE EFFORT</a>
+                  <a class="dropdown-item" href="#">A Collective Effort</a>
                 </li>
               </ul>
-            </div>
-          </div>
-    
-          <div class="dropdown">
-            <button class="btn" type="button" id="dropDownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              COMMENTS AND UPDATES
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <ul>
+            </div><!-- /btn-group -->
+          </div><!-- /input-group -->
+  
+          <div class="input-group">
+            <div class="input-group-btn">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Comments and Updates</button>
+              <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#">GUEST BOOK COMMENTS</a>
+                  <a class="dropdown-item" href="#">Guest Book Comments</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">FROM GUESTS</a>
+                  <a class="dropdown-item" href="#">From Guests</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">AFFILIATIONS AND MEMBERSHIPS</a>
+                  <a class="dropdown-item" href="#">Affiliations & Memberships</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">PEOPLE OF THE GOLDMINER</a>
+                  <a class="dropdown-item" href="#">People of the Goldminer</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">THEN AND NOW</a>
+                  <a class="dropdown-item" href="#">Then & Now</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">BLOG</a>
+                  <a class="dropdown-item" href="#">Blog</a>
                 </li>
               </ul>
-            </div>
-          </div>
+            </div><!-- /btn-group -->
+          </div><!-- /input-group -->
+  
+          <button class="btn btn-default " type="button">
+            Locate & Contact <br> the Goldminer Hotel
+          </button>
         </nav>
-        
-        <img src="goldminer_banner_image.jpg" alt="Reunion group gathered in front of Goldminer Hotel" id="top_photo">
       </header>
   
       <!-- END HEADER -->
   
       <!-- MAIN CONTENT -->
-      <section id="section_0">
+      <section id="section_0" role="main">
         <strong>
           Experience life of the 1890s with amenities expected today. Meals like Grandmother's. A night sky so dark you can see everything. Join other guests like this reunion group today.
         </strong>
@@ -248,7 +244,7 @@
         <hr>
       </section>
   
-      <section id="section_1">
+      <section id="section_1" role="complementary">
         <h2>National Recognition</h2>
   
         <img src="https://images.squarespace-cdn.com/content/v1/5227522be4b087318489edcf/1379621706712-MVUWAVI3LMNSCJ94MVMS/GMH+front.jpg?format=500w" alt="Goldminer Hotel building">
@@ -259,7 +255,7 @@
           The Hotel.</a>
       </section>
   
-      <section id="section_2">
+      <section id="section_2" role="complementary">
         <h2>People Past, Present</h2>
   
         <img src="https://images.squarespace-cdn.com/content/v1/5227522be4b087318489edcf/1379621895337-AQ6C86M46R1HK7JO5R5G/Hotel+event+c+1900.jpg?format=500w" alt="Goldminer Hotel building" alt="The Goldminer Hotel building in the early 1900s with a large crowd in front of it">
@@ -268,7 +264,7 @@
         <a href="/people">Read more about People.</a>
       </section>
   
-      <section id="section_3">
+      <section id="section_3" role="complementary">
         <h2>Remarkable Eldora</h2>
   
         <img src="https://images.squarespace-cdn.com/content/v1/5227522be4b087318489edcf/1379621761999-9QR2VGQU0APAAU7D8PQA/Dont+do+this.jpg?format=500w" alt="Three children hanging from a low bridge over a creek.">
@@ -283,14 +279,16 @@
         <strong>Email:<a href="mailto:info@goldminerhotel.com"> info@goldminerhotel.com</a></strong>
         <strong>Phone: 303-258-7770 OR 1-800-422-4629</strong>
         <strong>P.O. Box 679, 601 Klondyke Ave. Nederland, CO 80466</strong>
-        
+  
         <hr>
-        <img src="twitter_icon.png" alt="Goldminer Hotel Twitter">
+        <a href="https://twitter.com/goldminerhotel"><img src="https://github.com/carsonsyberg/DigMed/blob/main/Final/twitter_icon.png?raw=true" alt="Goldminer Hotel Twitter"></a>
         <strong>Powered by <a href="http://www.squarespace.com">Squarespace</a>.&nbsp;Site Developed by Ensign-Scott. © 2013-2019 Goldminer Hotel</strong>
       </footer>
   
     </div>
     <!-- END OF GRID CONTAINER -->
   </body>
+  
+    
 </html>
   

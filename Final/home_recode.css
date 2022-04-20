@@ -1,47 +1,7 @@
-
-.dropdown {
-    display: inline;
-    background: #1d1d1d;
-}
-
-
 img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 15px;
-    background: #1d1d1d;
-    margin-left: 0;
-}
-
-.dropdown-menu {
-    background: #1d1d1d;
-    align-content:stretch;
-}
-
-.btn {
-    background-color: #1d1d1d;
-    color: white;
-    margin: auto;
-    margin-top: 10px;
-    border-radius: 0px;
-    border: 4px;
-    border-color: white;
-}
-
-.btn:active,
-.btn:hover,
-.btn:focus {
-    background-color: white !important;
-    color: #1d1d1d;
-}
-
-a.dropdown-item {
-    color: white;  
 }
 
 ul {
@@ -54,19 +14,10 @@ header {
     display: block;
 }
 
-#leftAlign {
-    float: left;
-}
-
-#rightAlign {
-    float: right;
-}
-
 nav {
     grid-area: navvy;
     background: #1d1d1d;
     display: block;
-    float: left;
 }
 
 #section_1 {
@@ -164,6 +115,7 @@ section {
 
 header {
     color: white;   
+    text-align: center;
 }
 
 h1 {
@@ -209,3 +161,29 @@ header a:hover, header a:active, header a:focus {
     background: white;
     text-decoration: none;
 }
+
+#headerButton {
+  background: #bd9a00;
+  min-width: 100%;
+  min-height: 50px;
+  font-size: xx-large;
+}
+
+.input-group, .input-group-btn {
+  display: inline;
+  
+}
+
+.btn-default {
+  max-width: 170px;
+  max-height: 60px;
+  min-width: 170px;
+  min-height: 60px;
+  border-radius: 0px;
+}
+
+.dropdown-menu {
+  margin-top: 30px;
+}
+
+
